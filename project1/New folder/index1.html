@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style1.css" rel="stylesheet">
+    <script src="index1.js"></script>
+</head>
+<body>
+    <center>
+    <h1>EXAM REGISTRATION</h1>
+        <form name="myForm" action="m.php" onsubmit="return validateForm()" method="post"><br>
+        <div>
+            <table style="width: 50%;">
+            <tr></tr>
+            <td><label for="fname">NAME</label></td>
+            <td>:</td>
+            <td><input type="text" id="fname" name="fname" value=""></td>
+            </tr>
+
+            <tr>
+            <td><label for="dob">D.O.B</label></td>
+            <td>:</td>
+            <td><input type="date" id="dob" name="DOB" value="dd-mm-yyyy"></td>
+            </tr>
+
+            <tr>
+            <td><label for="gen">GENDER</label></td>
+            <td>:</td>
+            <td><input type="radio" class="h" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" class="h" id="female" name="gender">
+            <label for="female">Female</label></td>
+            </tr>
+
+            <tr>
+            <td><label for="addr">ADDRESS</label></td>
+            <td>:</td>
+            <td><textarea rows="5" cols="50" id="Addr" form="reg" style="resize: none;"></textarea></td>
+            </tr>
+
+            <tr>
+            <td><label for="email">EMAIL ID</label></td>
+            <td>:</td>
+            <td><input type="email" id="email" name="Email" value=""></td>
+            </tr>
+
+            <tr>
+            <td><label for="cont">CONTACT</label></td>
+            <td>:</td>
+            <td><input type="text" id="cont" name="Cont" value="" pattern="[1-9]*"></td>
+            </tr>
+            
+            <tr>
+            <td><label for="iname">INSTITUTION NAME</label></td>
+            <td>:</td>
+            <td><input type="text" id="iname" name="Iname" value=""></td>
+            </tr>
+
+            <tr>
+            <td><label for="deg">DEGREE</label></td>
+            <td>:</td>
+            <td><input type="text" id="deg" name="Deg" value=""></td>
+            </tr>
+
+            <tr>
+            <td><label for="bran">BRANCH</label></td>
+            <td>:</td>
+            <td><input type="text" id="bran" name="Bran" value=""></td>
+            </tr>
+
+            <tr>
+            <td><label for="year">YEAR</label></td>
+            <td>:</td>
+            <td><input class="h" type="radio" id="first" name="yr">
+            <label for="first">I</label>
+            <input type="radio" class="h" id="second" name="yr">
+            <label for="second">II</label>
+            <input type="radio" class="h"  id="third" name="yr">
+            <label for="third">III</label>
+            <input type="radio" class="h" id="fourth" name="yr">
+            <label for="fourth">IV</label></td>
+            </tr>
+
+            <tr >
+            <td><label for="sem">SEMESTER</label></td>
+            <td>:</td>
+            <td><input type="text" id="sem" name="Sem" value=""></td>
+            </tr>
+
+            <tr>
+            <td colspan="3" style="text-align: center;"><button type="submit" value="submit" >Submit</button></td>
+            </tr>
+        </table>
+        </div>
+          </form> 
+    </center>
+
+
+</body>
+</html>

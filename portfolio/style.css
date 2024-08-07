@@ -1,0 +1,1084 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100vh 100vh 100vh 100vh 100vh;
+    grid-template-areas: 'header header'
+    'home home'
+    'about about'
+    'new new'
+    'project project'
+    'footer footer';
+    overflow-x: hidden;
+}
+
+
+
+.header{
+    grid-area: header;
+    display: flex;
+    background-color:#202530;
+    height: 60px;
+    position: relative;
+    width: 100vw;
+    color: white;
+    justify-content: space-around;
+    position: fixed;
+}
+h1{
+    
+    display: flex;
+    color:#05f0fc;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1>i{
+    margin-left: 6px;
+}
+
+.navbar{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar>a{
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.navbar>a:hover{
+    color: #05f0fc;
+}
+
+.content{
+    grid-area: home;
+    display: grid;
+    grid-template-columns: 750px 1fr;
+    grid-template-rows: 400px;
+    grid-template-areas:'aside main' ;
+    background-color: #2a2e36;
+    color: white;
+}
+
+.content1{
+    grid-area: aside;
+    margin-top: 180px;
+    padding: 30px;
+    
+}
+.content2{
+    grid-area: main;
+
+}
+p>i{
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.aside{
+    padding-left: 100px;
+    animation:aside .3s 1s linear;
+}
+@keyframes aside{
+    from{
+        transform: translateY(100px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+
+    }
+}
+aside>h2,p{
+    padding-bottom: 30px;
+}
+
+aside>h4{
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #ff347f;
+}
+
+aside>h2{
+    font-size: 30px;
+}
+
+span{
+    color:rgb(51, 177, 177);
+}
+.hire{
+    
+    border: 1px solid grey ;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(185, 93, 159);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.hire:hover{
+    background-color:rgb(219, 93, 184);
+}
+
+.cv1{
+    
+    border: 1px solid grey ;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(230, 228, 228);
+    color: black;
+    border-style: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.cv1:hover{
+    background-color:rgb(193, 192, 192) ;
+}
+
+a>i{
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    align-items: center;
+    padding: 10px;
+    border-style: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+a>i:hover{
+    background-color: #05f0fc;
+    color: white;
+}
+
+#in{
+    margin-left: 30px;
+}
+
+#git{
+    margin-left: 30px;   
+}
+
+
+main{
+    padding-left: 200px;
+    
+}
+article>img{
+    width: 400px;
+    height: 350px;
+    margin-left: 20px;
+    margin-top: 100px;
+
+}
+
+.about{
+    grid-area: about;
+    background-color: rgb(33, 32, 32);
+    height: 100vh;
+    color: white;
+    
+}
+
+.about-me{
+    
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 700px;
+    
+}
+.aboutt{
+    display: grid;
+    grid-template-columns: 750px 1fr;
+    grid-template-rows: 800px;
+    grid-template-areas: 'c1 c2';
+}
+
+.about-content1{
+    grid-area: c1;
+}
+
+.about-content1>img{
+    margin-left: 300px;
+    margin-top: 40px;
+    width: 270px;
+    height: 350px;
+    border: 2px solid aqua;
+    padding: 10px;
+}
+.abc{
+    grid-area: c2;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    width: 500px;
+    height: 200px;
+    border-style: none;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    color: black;
+}
+
+.link>a{
+    color: white;
+    text-decoration: none;
+    padding-right:40px ;
+    font-size: 20px;
+}
+.link>a:hover{
+    color: #05f0fc;
+}
+.in{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.new{
+    grid-area: new;
+    display: grid;
+    grid-template-columns: 400px 600px 400px;
+    grid-template-rows: 300px;
+    grid-template-areas: 'skill ed ex';
+    height: 100vh;
+    background-color: #2a2e36;
+
+}
+.skill{
+    grid-area: skill;
+    color: white;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.skill>h2{
+    
+    color: #ff347f;
+}
+.skill>li{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.ed{
+    grid-area: ed;
+    color: white;
+    margin-top: 200px;
+    margin-left: 150px;
+}
+section{
+    padding-left: 20px;
+}
+section>h4{
+    
+    color: #ff6034;
+}
+.ed>h2{
+    color: #ff347f;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.ex{
+    grid-area: ex;
+    margin-top: 200px;
+    padding-bottom:10px ;
+}
+.ex>h2{
+    color: #ff347f;
+}
+.ex>section{
+    margin-top: 20px;
+    color: white;
+}
+
+.projects{
+    grid-area: project;
+    background-color:black;
+    height: 100vh;
+    
+}
+
+.project-title{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.project-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.project-item1{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 'p1 p2' 'p3 p4';
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+
+
+.project1{
+    grid-area: p1;
+    border: 1px solid;
+    width: 250px;
+    height: 160px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    
+    
+}
+
+.project2{
+    grid-area: p2;
+    border: 1px solid;
+    width:250px;
+    height: 160px;
+    margin-left: 100px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+
+.project3{
+    grid-area: p3;
+    border: 1px solid;
+    width: 250px;
+    height: 160px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    
+}
+
+.project4{
+    grid-area: p4;
+    border: 1px solid;
+    width: 250px;
+    height: 160px;
+    margin-left: 100px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+.project-item1>a{
+    display:flex ;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:  #2a2e36;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+.con{
+    text-align: center;
+    font-size: 27px;
+    padding-top: 100px;
+    
+}
+input[type="text"]{
+    padding: 10px;
+    width: 400px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    margin-left: 550px;
+    
+}
+input[type="email"]{
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 550px;
+
+}
+textarea{
+    padding: 10px;
+    margin-left: 550px;
+    width: 400px;
+    height: 100px;
+    
+}
+.co{
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+@media (max-width:1286px) {
+    .container{
+        grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 100vh 100vh 100vh 100vh 100vh;
+    grid-template-areas: 'header header'
+    'home home'
+    'about about'
+    'new new'
+    'project project'
+    'footer footer';
+    }
+    
+    .mypic{
+        margin-left:-170px;
+    }
+    .aside>p{
+        width: 460px;
+    }
+    .project-item1{
+        margin-left: -150px;
+    }
+    .about-me{
+        margin-left: 500px;
+    }
+    .aboutt{
+        margin-left: 0px;
+    }
+    .about-content1{
+        width: 400px;
+        margin-left: -200px;
+    }
+    .about-content2{
+        margin-left: -100px;
+    }
+    .ed{
+        margin-left: 100px;
+    }
+    .ex{
+        margin-left: -100px;
+    }
+    .project-title{
+        margin-left: -150px;
+    }
+    .project-item1{
+        margin-left: 250px;
+    }
+    .con{
+        margin-left: -100px;
+    }
+    input[type="text"]{
+        margin-left: 400px;
+    }
+    input[type="email"]{
+        margin-left: 400px;
+    }
+    textarea{
+        margin-left:400px ;
+    }
+    .co{
+        margin-left: -100px;
+    }
+}
+
+@media (max-width:1024px) {
+    
+    aside{
+        margin-left: -100px;
+    }
+    aside>p{
+        width: 450px;
+    }
+    .main{
+        margin-left: -200px;
+    }
+    .main>img{
+        margin-left:-50px;
+        width: 360px;
+        height: 260px;
+    }
+    .about-me{
+        margin-left: 400px;
+    }
+    .aboutt{
+        margin-left: -180px;
+    }
+    .about-content1{
+        margin-left: 20px
+    }
+    
+    .skill{
+        margin-left: 100px;
+    }
+    .ed{
+        margin-left: -70px;
+    }
+    .ex{
+        margin-left: -320px;
+    }
+    .project-item1{
+        margin-left: 100px;
+    }
+    .con{
+        margin-left: -150px;
+    }
+    input[type="text"]{
+        margin-left: 250px;
+    }
+    input[type="email"]{
+        margin-left: 250px;
+    }
+    textarea{
+        margin-left: 250px;
+    }
+    .co{
+        margin-top: 75px;
+    }
+        
+        
+}
+
+@media (max-width:900px) {
+    .aside>p{
+        width: 400px;
+    }
+    .main{
+        margin-left: -300px;
+        margin-top: 100px;
+    }
+    article>img{
+        margin-left: -100px;
+        width: 330px;
+        height:260px;
+    }
+    .about-me{
+        margin-left: 400px;
+    }
+    .aboutt{
+        margin-left: -230px;
+    }
+    .about-content2{
+        margin-left: 70px;
+
+    }
+    .about-content1>img{
+        margin-top: 100px;
+        width: 220px;
+        height: 300px;
+    }
+    .about-content2{
+        margin-left: -130px;
+    }
+    .abc{
+        width: 400px;
+    }
+    .ed{
+        margin-left: -100px;
+    }
+    .ex{
+        margin-left: -400px;
+    }
+    .project-item1{
+        margin-left: 50px;
+    }
+    input[type="text"]{
+        margin-left: 200px;
+    }
+    input[type="email"]{
+        margin-left: 200px;
+    }
+    textarea{
+        margin-left: 200px;
+    }
+
+    
+}
+
+
+
+@media  only screen and (max-width:540px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 700px 695px 1050px 335px 1fr;
+        grid-template-areas: 'header'
+        'home'
+        'about'
+        'new'
+        'project'
+        'footer';
+        /* overflow-x: scroll; */
+        
+    }
+    .header{
+        position: fixed;
+        justify-content: left;
+        width: 550px;
+    }
+    .header>h1{
+        font-size: 20px;
+        margin-left: 7px;
+    }
+    .navbar>a{
+        margin-left: 30px;
+    }
+    nav{
+        margin-left: 70px;
+    }
+    .content{
+        grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:'main' 
+    'aside';
+    }
+
+    /* .content1{
+    margin-top: 50px;
+    } */
+    .main{
+        margin-left: 100px;
+        margin-top: -80px;
+    }
+    article>img{
+        width:250px ;
+        height: 210px;
+    }
+
+    .aside{
+        width: 550px;
+    }
+    .aside>p{
+        width: 450px;
+    }
+    .p1{
+        width: 430px;
+    }
+    
+    .about-me>h3{
+        margin-left: -220px;
+        
+    }
+    .aboutt{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 400px;
+        grid-template-areas: 'c1'
+        'c2';
+    }
+    .about-content1>img{
+        margin-left: 340px;
+        width: 200px;
+        height: 250px;
+        margin-top: 30px;
+    }
+    
+    .abc{
+        width: 300px;
+        margin-left: 450px;
+    }
+    .about-content2>.link{
+        margin-left: 450px;
+    }
+    .link>a{
+        padding-left: 0;
+        font-size: 15px;
+    }
+    .new{
+        grid-template-columns: 400px 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 'skill ed''ex .';
+    }
+    .skill{
+        margin-top: 20px;
+        font-size: 15px;
+        margin-left: 40px;
+        
+    }
+    /* .skill>h2{
+        margin-left: -180px;
+    }
+    .skill>li{
+        margin-left: -180px;
+    } */
+    .ed{
+        margin-top: 17px;
+        margin-left: -200px;
+        font-size: 15px;
+    }
+    .ex{
+        margin-top: 80px;
+        margin-left:160px ;
+    }
+
+    .projects{
+        margin-top: -360px;
+    }
+    .project-item1{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 'p1'
+        'p2'
+        'p3'
+        'p4';
+        margin-top: -10px;
+        margin-left: 100px;
+    }
+    .project-title{
+        margin-top: -10px;
+        margin-left: -70px;
+    }
+
+    .project-item1>a{
+        margin-bottom: 10px;
+        width: 250px;
+        height: 130px;
+    }
+    .project2{
+        margin-left: 0px;
+    }
+    .project4{
+        margin-left: 0px;
+    }
+    .footer{
+        margin-top: 0;
+        overflow-y: hidden;
+        /* height: 800px;
+        width: 500px; */
+    }
+    .footer>.con{
+        margin-left:-50px;
+        margin-top: 0;
+    }
+    .footer>input[type="text"]{
+        margin-left: 130px;
+        width: 250px;
+        margin-top: 80px;
+    }
+    .footer>input[type="email"]{
+        margin-left: 130px;
+        width: 250px;
+    }
+    .footer>textarea{
+        margin-left: 130px;
+        width: 250px;
+        height: 200px;
+    }
+    .footer>.co{
+        margin-left: -20px;
+        margin-top: 100px;
+    }
+} 
+
+@media only screen and (max-width:450px) {
+    .navbar{
+        margin-left: 30px;
+    }
+    .navbar>a{
+       margin-left:20px; 
+    }
+    .main{
+        margin-left: 30px;
+    }
+    article>img{
+        width:280px;
+    }
+    .aside>p{
+        width: 360px;
+    }
+    
+    .about-me{
+        margin-left:350px;
+    }
+    .about-content1{
+        width: 300px;
+    }
+    .about-content1>img{
+        margin-left: 300px;
+    }
+    .about-content2>.abc{
+        margin-left: 400px;
+    }
+    .about-content2>.link{
+        margin-left: 400px;
+    }
+    .skill{
+        margin-left: 20px;
+    }
+    .ed{
+        margin-left: -250px;
+        font-size: 14px;
+    }
+    .ex{
+        margin-left: 100px;
+    }
+    .project-title{
+        margin-left: -150px;
+    }
+    .project-item1>a{
+        margin-left: -40px;
+        width: 230px;
+        
+    }
+    .project2{
+        margin-top: 4px;
+    }
+    .project3{
+        margin-top: 4px;
+    }
+    .project4{
+        margin-top: 4px;
+    }
+    
+    .con{
+        margin-left: -170px;
+    }
+    .footer>input[type="text"]{
+        margin-left: 80px;
+        width: 240px;
+    }
+    .footer>input[type="email"]{
+        margin-left: 80px;
+        width: 240px;
+    }
+    .footer>textarea{
+        margin-left: 80px;
+        width: 240px;
+        height: 150px;
+    }
+    .footer>.co{
+        margin-left: -50px;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width:320px) {
+    .header>h1{
+        margin-left: 2px;
+        font-size: 17px;
+    }
+    .navbar>a{
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    .navbar{
+        margin-left: 10px;
+    }
+    .main{
+        margin-top:-40px;
+        margin-left: -10px;
+    }
+    article>img{
+        margin-top: 80px;
+        width: 250px;
+        height: 180px;
+    }
+
+    aside>h2{
+        font-size: 25px;
+    }
+    .aside>p{
+        width: 250px;
+    }
+    .about-me{
+        font-size: 20px;
+        margin-left: 300px;
+    }
+    
+    .about-content1>img{
+        margin-left: 270px;
+        width: 160px;
+        height: 200px;
+    }
+    .about-content2{
+        margin-left: -150px;
+    }
+    .new{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'skill' 'ed' 'ex';
+    }
+    .abc{
+        width: 250px;
+        padding: 5px;
+    }
+    .skill{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .skill>li{
+        margin-top: 5px;
+    }
+    .ed{
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .ed>section{
+        margin-top: -5px;
+    }
+    .ex{
+        margin-top: -10px;
+        margin-left: 20px;
+    }
+    
+    .project-title{
+        margin-left: -270px;
+    }
+    .project-item1{
+        margin-left: 80px;
+    }
+    .project-item1>a{
+        margin-top: 10px;
+        width: 170px;
+        height: 120px;
+    }
+    .footer>.con{
+        margin-left: -60px;
+    }
+    .footer>input[type="text"]{
+        margin-left: 50px;
+        width: 200px;
+    }
+    .footer>input[type="email"]{
+        margin-left: 50px;
+        width: 200px;
+    }
+    .footer>textarea{
+        margin-left: 50px;
+        width: 200px;
+        height: 100px;
+    }
+    .footer>.co{
+        margin-left: -20px;
+    }
+}
+
+@media (max-width:250px) {
+    .header>h1{
+        margin-left: 2px;
+        font-size: 15px;
+    }
+    h1>i{
+        margin-left: 1px;
+    }
+    .navbar>a{
+        margin-left: 4px;
+        font-size: 11px;
+    }
+    nav{
+        margin-left: 8px;
+    }
+
+    article>img{
+        margin-left: -150px;
+        width: 200px;
+        height: 150px;
+    }
+
+    aside{
+       
+        margin-left: -120px;
+    }
+    aside>h2{
+        font-size: 20px;
+    }
+    .aside>p{
+        font-size: 14.5px;
+        width: 220px;
+    }
+    .hire{
+    padding: 7px;
+    }
+    .cv1{
+        padding: 7px;
+    }
+    .about-me{
+        margin-left: -330px;
+        font-size: 20px;
+    }
+    .about-content1{
+        width: 190px;
+        height: 250px;
+        margin-top: 35px;
+        margin-left: 250px;
+    }
+    .in{
+        font-size: 15px;
+        margin-top: -30px;
+    }
+    .intro{
+        margin-top: -10px;
+    }
+    .skill{
+        margin-left: 230px;
+        font-size: 24px;
+    }
+    .about-list1{
+        margin-left: 160px;
+    }
+    .about-list1>dd{
+        font-size: 13px;
+        margin-left: 20px;
+        margin-top: -20px;
+        padding: 10;
+    }
+    .about-list2>dd{
+        font-size: 13px;
+        margin-left: 20px;
+        margin-top: -20px;
+        padding: 10;
+    }
+    .about-list2{
+        margin-left: 160px;
+    }
+    .project-title{
+        margin-top: 60px;
+        margin-left: -330px;
+        font-size: 24px;
+    }
+    .project-item1{
+    
+        margin-left: -380px;
+    }
+    .project-item1>a{
+        width: 170px;
+        height: 170px;
+    }
+    .con{
+        margin-left: -340px;
+        font-size: 20px;
+    }
+    input[type="text"]{
+        margin-left: 30px;
+        width: 170px;
+    }
+    input[type="email"]{
+        margin-left: 30px;
+        width: 170px;
+    }
+    textarea{
+        margin-left: 30px;
+        width: 170px;
+        height: 50px;
+    }
+    .co{
+        margin-left: -330px;
+        font-size: 15px;
+    }
+}
