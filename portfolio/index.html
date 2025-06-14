@@ -6,10 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
 
 </head>
 <body>
-    <div class="container">
+    <div class="contain">
         <div class="header" id="head">
             <h1>Mithran<i class="fa-solid fa-cube"></i></h1>
 
@@ -33,7 +35,7 @@
                     <h2 class="design">I'm <span>Web Developer</span></h2>
                     <p class="p1">A frontend developer with a passion for creating visual stunning and user-friendly website</p>
                     <a href="mailto:navamithran25@gmail.com" class="hire">Hire Me</a>
-                <a href="Navamithran_InternshalaResume (1).pdf" target="_blank" class="cv1">Download cv</a><br><br><br><br>
+                <a href="Navamithran_resume.pdf" target="_blank" class="cv1">Download cv</a><br><br><br><br>
                 <a class="icon" href="https://www.linkedin.com/feed/" id="linkedin"><i class="fa-brands fa-linkedin-in" id="linkedin"></i></a>
                 <a class="icon" href="https://www.instagram.com/mr_.remo.__/"><i class="fa-brands fa-instagram" id="in"></i></a>
                 <a class="icon" href="https://github.com/Mithran25/projects.git"><i class="fa-brands fa-github" id="git"></i></a>
@@ -55,12 +57,24 @@
             </div>
             <div class="aboutt">
                 <div class="about-content1">
-                    <img src="IMG_0663.PNG" alt="">
+                    <img src="Remove background project (2).png" alt="">
                 </div>
                 <div class="about-content2">
-                    <div class="abc">
+                    <!-- <div class="abc">
                         <h5 class="in">My Introduction</h5>
                     <p class="intro">A dedicated and detail-oriented individual looking for an entry-level position at a well-reputed organization to gain experience and expand my knowledge.</p>
+                    </div> -->
+                    <div id="card" class="col-md-6 text-center d-flex flex-column align-items-center p-5">
+                        <div class="card" id="about_card" style="width: 20rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">My Introduction</h5>
+                              <p class="card-text"> Aspiring Full Stack and Software Developer with hands-on experience in front-end technologies like HTML, 
+                                CSS, and JavaScript, along with strong knowledge of Java and SQL. Passionate about building responsive, 
+                                user-centric applications and solving real-world problems through clean, efficient code and eager to 
+                                expand programming capabilities by contributing to real-world software solutions </p>
+                              
+                            </div>
+                          </div>
                     </div>
                     <div class="link">
                         <a href="#new">Skills</a>
@@ -75,18 +89,18 @@
         <div class="new" id="new">
             <div class="skill">
                 <h2>Skill</h2>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Javascript</li>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>Javascript</li>
-                <li>Java</li>
-                <li>Github</li>
                 <li>Figma</li>
             </div>
             <div class="ed">
                 <h2>Education</h2>
                 <section class="s1">
                     <h4>2021-2025</h3>
-                    <h3>Anna University-Tindivanam</h3>
+                    <h3 style="font-size: 15px;">Anna University-Tindivanam</h3>
                     <p>Computer Science and Engineering</p>
                 </section>
                 <section class="s2">
@@ -104,13 +118,13 @@
             <div class="ex">
                 <h2>Experience</h2>
                 <section>
-                    <h4>2024-current</h4>
+                    <h4>2024</h4>
+                    <p> Led and coordinated technical and non-technical events for a national‑level symposium.<br>
+                        Organized the events and managed volunteers, scheduling, and digital communications.<br>
+                        Designed and developed the official event website using HTML, CSS, JavaScript, and Bootstrap.</p>
                     <p>Internship at Legends Tech Solution</p>
                 </section>
-                <section>
-                    <h4>2024</h4>
-                    <p>Team Lead at College</p>
-                </section>
+                
                 
             </div>
         </div>
@@ -118,27 +132,76 @@
         <section class="projects" id="projects">
             <div class="project-title">
                 <p><b>Project</b></p>
-            </div>
+            </div> 
     
-            <div class="project-item1">
-                <a href="https://tourmaline-selkie-b22300.netlify.app/" class="project1">Project</a>
+            <!-- <div class="project-item1">
+                <a href="https://ceta2k24.netlify.app/" class="project1">Project</a>
                 <a href="https://frolicking-pothos-0c5d62.netlify.app/" class="project2">Project</a>
-                <a href="" class="project3">Project</a>
+                <a href="https://tourmaline-selkie-b22300.netlify.app/" class="project3">Project</a>
                 <a href="" class="project4">Project</a>
+            </div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center d-flex flex-column align-items-center p-5">
+                        <div class="card" id="p1" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Project 1</h5>
+                              <p class="card-text">CETA Website </p>
+                              <a href="https://ceta2k24.netlify.app/" class="btn btn-primary">Click Me</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 text-center d-flex flex-column align-items-center p-5">
+                        <div class="card" id="p1" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Project 2</h5>
+                              <p class="card-text">My Portfolio</p>
+                              <a href="https://navamithran-portfolio.netlify.app/" class="btn btn-primary">Click Me</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-12 text-center d-flex flex-column align-items-center p-5">
+                        <div class="card" id="p1" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Project 3</h5>
+                              <p class="card-text"> google Login form</p>
+                              <a href="https://frolicking-pothos-0c5d62.netlify.app/" class="btn btn-primary">Click Me</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    
+                </div>
             </div>
         </section>
 
-        <div class="footer" id="footer">
+        <div class="contact" id="footer">
             
         
             <h3 class="con">Contact</h3>
-            <input type="text" placeholder="Name" class="fo"><br>
+            <!-- <input type="text" placeholder="Name" class="fo"><br>
             <input type="email" placeholder="enter your mail" class="fo"><br>
             <textarea name="" id="" class="fo" placeholder="Message"></textarea>
+            <input type="submit" class="submo"> -->
+            <div class="row">
+                <div class="col-md-12 text-center d-flex flex-column align-items-center p-5">
+
+                <div class="card" style="width: 20rem;">
+                    <ul class="list-group list-group-flush" style="padding: 20px;">
+                      <li class="list-group-item">9342915572</li>
+                      <li class="list-group-item"><a href="mailto:navamithran25@gmail.com">navamithran25@gmail.com</a></li>
+                      <li class="list-group-item"><a href="https://www.linkedin.com/in/navamithran-a-51811a28b">linkedin profile-Navamithran</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
             <!-- <input type="submit"> -->
-            <p class="co">&copy;navamithran@gmail.com</p>
         
         </div> 
+        <!-- <div class="footer">
+            <p class="co">&copy;navamithran@gmail.com</p>
+
+        </div> -->
     </div>
 </body>
 </html>

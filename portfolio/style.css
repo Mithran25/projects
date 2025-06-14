@@ -4,19 +4,20 @@
     box-sizing: border-box;
 }
 
-.container{
+.contain{
     display: grid;
     height: 100vh;
     position: relative;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 100vh 100vh 100vh 100vh 100vh;
+    grid-template-rows: 1fr 100vh 100vh 100vh 100vh;
     grid-template-areas: 'header header'
     'home home'
     'about about'
     'new new'
     'project project'
-    'footer footer';
+    'contact contact'
+    ;
     overflow-x: hidden;
 }
 
@@ -32,6 +33,7 @@
     color: white;
     justify-content: space-around;
     position: fixed;
+    z-index: 1;
 }
 h1{
     
@@ -196,16 +198,15 @@ article>img{
 .about{
     grid-area: about;
     background-color: rgb(33, 32, 32);
-    height: 100vh;
+    height: 1000px;
     color: white;
     
 }
 
 .about-me{
-    
+    text-align: center;
     font-size: 25px;
     margin-top: 60px;
-    margin-left: 700px;
     
 }
 .aboutt{
@@ -227,7 +228,13 @@ article>img{
     border: 2px solid aqua;
     padding: 10px;
 }
-.abc{
+
+#about_card{
+    margin-top: 55px;
+    margin-left: -70px;
+    
+}
+/* .abc{
     grid-area: c2;
     margin-top: 100px;
     margin-bottom: 30px;
@@ -239,7 +246,7 @@ article>img{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: white;
     color: black;
-}
+} */
 
 .link>a{
     color: white;
@@ -262,8 +269,9 @@ article>img{
     grid-template-columns: 400px 600px 400px;
     grid-template-rows: 300px;
     grid-template-areas: 'skill ed ex';
-    height: 100vh;
+    height: 1000px;
     background-color: #2a2e36;
+    margin-left: -100px;
 
 }
 .skill{
@@ -271,6 +279,7 @@ article>img{
     color: white;
     margin-top: 200px;
     margin-left: 200px;
+
 }
 .skill>h2{
     
@@ -302,6 +311,7 @@ section>h4{
     grid-area: ex;
     margin-top: 200px;
     padding-bottom:10px ;
+    width: 450px;
 }
 .ex>h2{
     color: #ff347f;
@@ -331,7 +341,11 @@ section>h4{
     font-size: 30px;
 }
 
-.project-item1{
+#p1{
+    margin-top: 0px;
+}
+
+/* .project-item1{
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 300px 300px;
@@ -394,10 +408,10 @@ section>h4{
     text-decoration: none;
     color: black;
     justify-content: center;
-}
+} */
 
-.footer{
-    grid-area: footer;
+.contact{
+    grid-area: contact;
     background-color:  #2a2e36;
     height: 100vh;
     width: 100vw;
@@ -409,7 +423,7 @@ section>h4{
     padding-top: 100px;
     
 }
-input[type="text"]{
+/* input[type="text"]{
     padding: 10px;
     width: 400px;
     margin-top: 200px;
@@ -427,11 +441,33 @@ input[type="email"]{
 textarea{
     padding: 10px;
     margin-left: 550px;
+    margin-bottom: 20px;
     width: 400px;
     height: 100px;
     
 }
+input[type="submit"]{
+    margin-left: 370px;
+    padding: 5px;
+    background-color: #05f0fc;
+    color: black;
+    border-style: none;
+
+}
+input[type="submit"]:hover{
+    background-color: #05f0fc;
+} */
+.footer{
+    grid-area: footer;
+}
+.card{
+    margin-top: 100px;
+}
+
 .co{
+    background-color:#202530;
+    color: white;
+    height: 100%;
     text-align: center;
     font-size: 20px;
     
@@ -459,7 +495,7 @@ textarea{
         margin-left: -150px;
     }
     .about-me{
-        margin-left: 500px;
+        /* margin-left: 500px; */
     }
     .aboutt{
         margin-left: 0px;
@@ -478,13 +514,13 @@ textarea{
         margin-left: -100px;
     }
     .project-title{
-        margin-left: -150px;
+        /* margin-left: -150px; */
     }
     .project-item1{
         margin-left: 250px;
     }
     .con{
-        margin-left: -100px;
+        /* margin-left: -100px; */
     }
     input[type="text"]{
         margin-left: 400px;
@@ -517,7 +553,7 @@ textarea{
         height: 260px;
     }
     .about-me{
-        margin-left: 400px;
+        /* margin-left: 400px; */
     }
     .aboutt{
         margin-left: -180px;
@@ -525,21 +561,25 @@ textarea{
     .about-content1{
         margin-left: 20px
     }
+    #about_card{
+        margin-left: 70px;
+    }
     
     .skill{
-        margin-left: 100px;
+        
     }
     .ed{
         margin-left: -70px;
     }
     .ex{
         margin-left: -320px;
+        width: 370px;
     }
     .project-item1{
         margin-left: 100px;
     }
     .con{
-        margin-left: -150px;
+        /* margin-left: -150px; */
     }
     input[type="text"]{
         margin-left: 250px;
@@ -571,7 +611,7 @@ textarea{
         height:260px;
     }
     .about-me{
-        margin-left: 400px;
+        /* margin-left: 400px; */
     }
     .aboutt{
         margin-left: -230px;
@@ -590,6 +630,9 @@ textarea{
     }
     .abc{
         width: 400px;
+    }
+    .skill{
+        margin-left: 130px;
     }
     .ed{
         margin-left: -100px;
@@ -615,10 +658,10 @@ textarea{
 
 
 
-@media  only screen and (max-width:540px) {
+@media (max-width:540px) {
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 700px 695px 1050px 335px 1fr;
+        grid-template-rows: 1fr 100vh 100vh 100vh 100vh 100vh;
         grid-template-areas: 'header'
         'home'
         'about'
@@ -660,6 +703,7 @@ textarea{
     article>img{
         width:250px ;
         height: 210px;
+        margin-top: 150px;
     }
 
     .aside{
@@ -673,7 +717,7 @@ textarea{
     }
     
     .about-me>h3{
-        margin-left: -220px;
+        /* margin-left: -220px; */
         
     }
     .aboutt{
@@ -683,12 +727,14 @@ textarea{
         'c2';
     }
     .about-content1>img{
-        margin-left: 340px;
+        margin-left: 400px;
         width: 200px;
         height: 250px;
         margin-top: 30px;
     }
-    
+    #about_card{
+        margin-left: 350px;
+    }
     .abc{
         width: 300px;
         margin-left: 450px;
@@ -704,11 +750,12 @@ textarea{
         grid-template-columns: 400px 1fr;
     grid-template-rows: 300px 300px 300px;
     grid-template-areas: 'skill ed''ex .';
+    margin-top: 100px;
     }
     .skill{
         margin-top: 20px;
         font-size: 15px;
-        margin-left: 40px;
+        margin-left: 130px;
         
     }
     /* .skill>h2{
@@ -719,16 +766,17 @@ textarea{
     } */
     .ed{
         margin-top: 17px;
-        margin-left: -200px;
+        margin-left: -120px;
         font-size: 15px;
     }
     .ex{
-        margin-top: 80px;
+        margin-top: 150px;
         margin-left:160px ;
     }
 
     .projects{
-        margin-top: -360px;
+        margin-top: 200px;
+        height: 1000px;
     }
     .project-item1{
         grid-template-columns: 1fr;
@@ -744,6 +792,9 @@ textarea{
         margin-top: -10px;
         margin-left: -70px;
     }
+    #p1{
+        margin-left: -40px;
+    }
 
     .project-item1>a{
         margin-bottom: 10px;
@@ -756,11 +807,13 @@ textarea{
     .project4{
         margin-left: 0px;
     }
-    .footer{
+    .contact{
+        margin-top: 500px;
+    }
+    /* .footer{
         margin-top: 0;
         overflow-y: hidden;
-        /* height: 800px;
-        width: 500px; */
+        
     }
     .footer>.con{
         margin-left:-50px;
@@ -783,12 +836,12 @@ textarea{
     .footer>.co{
         margin-left: -20px;
         margin-top: 100px;
-    }
+    } */
 } 
 
-@media only screen and (max-width:450px) {
+@media (max-width:430px) {
     .navbar{
-        margin-left: 30px;
+        margin-left: 10px;
     }
     .navbar>a{
        margin-left:20px; 
@@ -803,34 +856,34 @@ textarea{
         width: 360px;
     }
     
-    .about-me{
+    /* .about-me{
         margin-left:350px;
-    }
+    } */
     .about-content1{
         width: 300px;
     }
     .about-content1>img{
         margin-left: 300px;
     }
-    .about-content2>.abc{
-        margin-left: 400px;
+    #about_card{
+        margin-left: 340px;
     }
     .about-content2>.link{
         margin-left: 400px;
     }
     .skill{
-        margin-left: 20px;
+        margin-left: 100px;
     }
     .ed{
-        margin-left: -250px;
+        margin-left: -170px;
         font-size: 14px;
     }
     .ex{
         margin-left: 100px;
     }
-    .project-title{
+    /* .project-title{
         margin-left: -150px;
-    }
+    } */
     .project-item1>a{
         margin-left: -40px;
         width: 230px;
@@ -846,9 +899,9 @@ textarea{
         margin-top: 4px;
     }
     
-    .con{
+    /* .con{
         margin-left: -170px;
-    }
+    } */
     .footer>input[type="text"]{
         margin-left: 80px;
         width: 240px;
@@ -865,6 +918,27 @@ textarea{
     .footer>.co{
         margin-left: -50px;
         margin-top: 150px;
+    }
+}
+
+@media (max-width:360px){
+    .navbar{
+        visibility: hidden;
+    }
+    aside>.p1{
+        width: 300px;
+    }
+    
+    #about_card{
+        width: 100px;
+        margin-left: 320px;
+    }
+    .ed{
+        margin-left: -270px;
+        font-size: 10px;
+    }
+    .ex{
+        font-size: 13px;
     }
 }
 
@@ -885,7 +959,7 @@ textarea{
         margin-left: -10px;
     }
     article>img{
-        margin-top: 80px;
+        margin-top: 100px;
         width: 250px;
         height: 180px;
     }
@@ -896,10 +970,10 @@ textarea{
     .aside>p{
         width: 250px;
     }
-    .about-me{
+    /* .about-me{
         font-size: 20px;
         margin-left: 300px;
-    }
+    } */
     
     .about-content1>img{
         margin-left: 270px;
@@ -911,7 +985,7 @@ textarea{
     }
     .new{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 'skill' 'ed' 'ex';
     }
     .abc{
@@ -920,26 +994,33 @@ textarea{
     }
     .skill{
         font-size: 14px;
-        margin-left: 30px;
+        margin-left: 150px;
     }
     .skill>li{
         margin-top: 5px;
     }
     .ed{
-        margin-left: 30px;
-        font-size: 14px;
+        margin-left: 130px;
+        margin-top: -130px;
+        font-size: 10px;
     }
+
     .ed>section{
-        margin-top: -5px;
+        margin-top: -20px;
+        font-size: 10px;
     }
     .ex{
-        margin-top: -10px;
-        margin-left: 20px;
+        margin-top: -120px;
+        margin-left: 100px;
+        width: 200px;
+    }
+    .ex>section{
+        margin-top: -5px;
     }
     
-    .project-title{
+    /* .project-title{
         margin-left: -270px;
-    }
+    } */
     .project-item1{
         margin-left: 80px;
     }
@@ -948,7 +1029,7 @@ textarea{
         width: 170px;
         height: 120px;
     }
-    .footer>.con{
+    /* .footer>.con{
         margin-left: -60px;
     }
     .footer>input[type="text"]{
@@ -966,7 +1047,7 @@ textarea{
     }
     .footer>.co{
         margin-left: -20px;
-    }
+    } */
 }
 
 @media (max-width:250px) {
@@ -1008,10 +1089,10 @@ textarea{
     .cv1{
         padding: 7px;
     }
-    .about-me{
+    /* .about-me{
         margin-left: -330px;
         font-size: 20px;
-    }
+    } */
     .about-content1{
         width: 190px;
         height: 250px;
@@ -1047,11 +1128,11 @@ textarea{
     .about-list2{
         margin-left: 160px;
     }
-    .project-title{
+    /* .project-title{
         margin-top: 60px;
         margin-left: -330px;
         font-size: 24px;
-    }
+    } */
     .project-item1{
     
         margin-left: -380px;
@@ -1060,11 +1141,11 @@ textarea{
         width: 170px;
         height: 170px;
     }
-    .con{
+    /* .con{
         margin-left: -340px;
         font-size: 20px;
-    }
-    input[type="text"]{
+    } */
+    /* input[type="text"]{
         margin-left: 30px;
         width: 170px;
     }
@@ -1080,5 +1161,5 @@ textarea{
     .co{
         margin-left: -330px;
         font-size: 15px;
-    }
+    } */
 }
